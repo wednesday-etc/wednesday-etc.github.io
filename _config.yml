@@ -9,10 +9,10 @@
 title: Wednesday ETC…
 email: wedetc@dreadserver.com
 description: > # this means to ignore newlines until "baseurl:"
-  Wednesday ETC… Come to our open mic session and get a free recording of your performance #OpenMic #RecordingSession #WednesdayNight #Dublin
+ <strong>Wednesday ETC… Open Mic Recording Session… </strong>Every Wednesday 9pm, The International Basement, Wicklow Street, Dublin, Ireland. Come to our open mic session and get a free recording of your performance #OpenMic #RecordingSession #WednesdayNight #TheInterNationalBar #Dublin
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://www.wednesdayetc.com" # the base hostname & protocol for your site
 twitter_username: wednesdayetc
 github_username:  tomdread
 
