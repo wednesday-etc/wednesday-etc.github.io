@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/wednesday-etc-50x50.png" height="50px" width="50px" />{{ site.title }}</a>
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -15,8 +15,12 @@
 
       <div class="trigger">
         {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}"> {{ my_page.title }}</a>
+          {% if my_page.navigation_title %}
+            {% if my_page.button %}
+                <a class="page-link button button-primary" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.navigation_title }}</a>
+            {% else %}
+                <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.navigation_title }}</a>
+            {% endif %}
           {% endif %}
         {% endfor %}
       </div>

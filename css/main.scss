@@ -4,7 +4,6 @@
 @charset "utf-8";
 
 
-
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -14,11 +13,11 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:       #cccccc;
+$background-color: #000000;
+$brand-color:      #ffffff;
 
-$grey-color:       #828282;
+$grey-color:       #cccccc;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
@@ -49,15 +48,6 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "buttons"
 ;
-
-// Social icons
-ul.share-buttons{
-  list-style: none;
-  padding: 0;
-}
-
-ul.share-buttons li{
-  display: inline;
-}

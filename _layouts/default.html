@@ -7,25 +7,19 @@
 
     {% include header.html %}
 
+{% if page.cover %}
+  <div class="blog-cover" style="background-image:url({{page.cover}});">
+{% else %}
+  <div class="blog-cover" style="background-image:url(http://app-beacon.com/wp-content/uploads/2015/05/events.jpg);">
+{% endif %}
+  </div>
+  {% if page.cover_credit %}
+    <span class="blog-cover-credit">Credit: Mother</span>
+  {% endif %}
+
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
-        <div class="social-buttons">
-	<ul class="share-buttons">
-  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.wednesdayetc.com&t=Wednesday%20ETC." title="Share on Facebook" target="_blank"><img src="{{ site.baseurl }}/images/simple_icons_black/Facebook.png"></a></li>
-  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.wednesdayetc.com&text=Wednesday%20ETC.:%20http%3A%2F%2Fwww.wednesdayetc.com&via=wednesdayetc" target="_blank" title="Tweet"><img src="{{ site.baseurl }}/images/simple_icons_black/Twitter.png"></a></li>
-  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.wednesdayetc.com" target="_blank" title="Share on Google+"><img src="{{ site.baseurl }}/images/simple_icons_black/Google+.png"></a></li>
-  <li><a href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fwww.wednesdayetc.com&t=Wednesday%20ETC.&s=" target="_blank" title="Post to Tumblr"><img src="{{ site.baseurl }}/images/simple_icons_black/Tumblr.png"></a></li>
-  <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.wednesdayetc.com&media=http://www.wednesdayetc.com/img/wednesday-etc-50x50.png&description=Open%20Mic%20Recording%20Session." target="_blank" title="Pin it"><img src="{{ site.baseurl }}/images/simple_icons_black/Pinterest.png"></a></li>
-  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fwww.wednesdayetc.com&title=Wednesday%20ETC." target="_blank" title="Add to Pocket"><img src="{{ site.baseurl }}/images/simple_icons_black/Pocket.png"></a></li>
-  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fwww.wednesdayetc.com&title=Wednesday%20ETC." target="_blank" title="Submit to Reddit"><img src="{{ site.baseurl }}/images/simple_icons_black/Reddit.png"></a></li>
-  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.wednesdayetc.com&title=Wednesday%20ETC.&summary=Open%20Mic%20Recording%20Session.&source=http%3A%2F%2Fwww.wednesdayetc.com" target="_blank" title="Share on LinkedIn"><img src="{{ site.baseurl }}/images/simple_icons_black/LinkedIn.png"></a></li>
-  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fwww.wednesdayetc.com&t=Wednesday%20ETC.&s=Open%20Mic%20Recording%20Session.&i=http://www.wednesdayetc.com/img/wednesday-etc-50x50.png" target="_blank" title="Publish on WordPress"><img src="{{ site.baseurl }}/images/simple_icons_black/Wordpress.png"></a></li>
-  <li><a href="https://pinboard.in/popup_login/?url=http%3A%2F%2Fwww.wednesdayetc.com&title=Wednesday%20ETC.&description=Open%20Mic%20Recording%20Session." target="_blank" title="Save to Pinboard"><img src="{{ site.baseurl }}/images/simple_icons_black/Pinboard.png"></a></li>
-  <li><a href="mailto:?subject=Wednesday%20ETC.&body=Open%20Mic%20Recording%20Session.:%20http%3A%2F%2Fwww.wednesdayetc.com" target="_blank" title="Email"><img src="{{ site.baseurl }}/images/simple_icons_black/Email.png"></a></li>
-</ul>
-</div> <!-- social-buttons -->
-
       </div>
     </div>
 
